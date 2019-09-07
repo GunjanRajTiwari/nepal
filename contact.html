@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>
-        #back{
-            height: 700px;
-            width: 100%;
-            background-image: url('assets/rara1.jpeg');
-        }
-    </style>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a href="index.html" class="navbar-brand">Visit Nepal</a>
 
         <ul class="navbar-nav">
@@ -35,8 +29,43 @@
                 </li>
         </ul>
     </nav>
-    <div id="back" class="container-fluid">
+    <div class="container-fluid">
+        <div class="container">
+            <h1 class="text-center">Get in touch</h1>
+            <div class="row">
+                <div class="column col-lg-4 col-md-5 col-sm-5 form-img">
+                    <img src="assets/pirate.png" alt="Contact us" class="image">
+                </div>
+                <div class="column col-lg-6 col-md-6 col-sm-7 col-12" id="form">
+                    <form action="#" class="was-validated">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-control" required>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
         
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Your email" class="form-control" required>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Invalid email</div>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea rows="5" id="message" name="message" placeholder="Enter message" class="form-control" required></textarea>                   <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Please write some message.</div>
+                        </div>
+        
+                            <label id="checkbox" class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember" checked> I would like to recieve informations and newsletters.
+                            </label>
+                        <button type="submit" class="btn btn-dark btn-block col-lg-3 col-md-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
