@@ -1,0 +1,97 @@
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 80%;
+}
+.places {
+    margin-top: 2%;
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.places:hover .image {
+    opacity: 0.3;
+}
+
+.places:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    position: relative;
+    color: #444444;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.texr-center{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    
+}
+
+@media (max-width: 599px){
+    .card {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 600px){
+    .card {
+        max-width: 600px;
+    }
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
